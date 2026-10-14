@@ -1,0 +1,14 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "compilerOptions": {
+    // 数组/对象索引访问更安全，但可能产生误报
+    "noUncheckedIndexedAccess": true,
+
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo"
+  }
+}
